@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/new/icons">
+        <file alias="Clock.png">Icons/77777.png</file>
+        <file alias="mono.png">Icons/1349069370_Alarm_Clock_mono.png</file>
+        <file>Icons/clockSmall.png</file>
+        <file>Icons/Clock.png</file>
+    </qresource>
+    <qresource prefix="/new/sounds">
+        <file alias="alarm.ogg">Sounds/condition_one.ogg</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>Fonts/AiDianGanFengXingKai-2.ttf</file>
+        <file>ClockWidget_bg.png</file>
+        <file>ClockWidget_center.png</file>
+        <file>ClockWidget_hour.png</file>
+        <file>ClockWidget_minute.png</file>
+        <file>ClockWidget_second.png</file>
+        <file>calendar_bg.jpg</file>
+        <file>centerWidget_bg.jpg</file>
+        <file>centerWidget_bg2.jpg</file>
+        <file>centerWidget_bg3.jpg</file>
+        <file>Icons/Clock.png</file>
+    </qresource>
+    <qresource prefix="/new/fonts"/>
+</RCC>

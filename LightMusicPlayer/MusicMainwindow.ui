@@ -1,0 +1,1563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1150</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>25</pointsize>
+   </font>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Widget{
+border-radius:10px;
+background-color:rgb(18,47,86);
+}
+</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1150</width>
+     <height>700</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QLabel" name="label_background">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1150</width>
+       <height>700</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QSlider" name="positionSlider">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>610</y>
+       <width>720</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSlider::add-page:Horizontal
+{     
+background-color: rgba(255, 255, 255,150);
+height:4px;  
+} 
+QSlider::sub-page:Horizontal   
+{  
+background-color: rgb(255, 255, 255);
+height:4px;
+}
+QSlider::groove:Horizontal   
+{ 
+background:transparent; 
+height:4px;
+}  
+QSlider::handle:Horizontal
+{ 
+height:16px; 
+width:16px; 
+border-image:url(:/image/image/image/sliderHandle.png);
+margin: -6 0px; 
+}
+      
+</string>
+     </property>
+     <property name="singleStep">
+      <number>10</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="tickPosition">
+      <enum>QSlider::NoTicks</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="positionLabel">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>980</x>
+       <y>600</y>
+       <width>115</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>00:00/00:00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>80</y>
+       <width>200</width>
+       <height>490</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="btnCurMusic">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>180</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>180</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>180</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>25</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+color:white;
+border-radius:0px;
+background-color: rgba(255, 255, 255,0);
+background-repeat:no-repeat;
+border:none;
+background-position:center center;
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255,100);
+}
+QPushButton:pressed{
+background-color: rgba(95, 95, 95,100);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string> 当前播放</string>
+      </property>
+      <property name="icon">
+       <iconset resource="imagefile.qrc">
+        <normaloff>:/image/image/image/current-music.png</normaloff>:/image/image/image/current-music.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnLocalMusic">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>180</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>180</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>180</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>25</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+color:white;
+border-radius:0px;
+background-color: rgba(255, 255, 255,0);
+background-repeat:no-repeat;
+border:none;
+background-position:center center;
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255,100);
+}
+QPushButton:pressed{
+background-color: rgba(95, 95, 95,100);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string> 本地音乐</string>
+      </property>
+      <property name="icon">
+       <iconset resource="imagefile.qrc">
+        <normaloff>:/image/image/image/local-music.png</normaloff>:/image/image/image/local-music.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnFavorMusic">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>180</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>180</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>180</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>25</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+color:white;
+border-radius:0px;
+background-color: rgba(255, 255, 255,0);
+background-repeat:no-repeat;
+border:none;
+background-position:center center;
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255,100);
+}
+QPushButton:pressed{
+background-color: rgba(95, 95, 95,100);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string> 我喜欢的</string>
+      </property>
+      <property name="icon">
+       <iconset resource="imagefile.qrc">
+        <normaloff>:/image/image/image/favo-music.png</normaloff>:/image/image/image/favo-music.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnMusicDetails">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>390</y>
+        <width>180</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>180</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>180</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>25</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+color:white;
+border-radius:0px;
+background-color: rgba(255, 255, 255,0);
+background-repeat:no-repeat;
+border:none;
+background-position:center center;
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255,100);
+}
+QPushButton:pressed{
+background-color: rgba(95, 95, 95,100);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>歌曲详情</string>
+      </property>
+      <property name="icon">
+       <iconset resource="imagefile.qrc">
+        <normaloff>:/image/image/image/detail.png</normaloff>:/image/image/image/detail.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1150</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="titleLabel">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>10</y>
+        <width>336</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>25</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(255, 255, 255);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnQuit">
+      <property name="geometry">
+       <rect>
+        <x>1100</x>
+        <y>0</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>关闭</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+border-radius:0px;
+background-image: url(:/image/image/image/quit.png);
+background-repeat:no-repeat;
+border:none;
+background-position:center center;
+
+}
+QPushButton:hover{
+
+background-color: rgba(230,0,0,0.5);
+}
+QPushButton:pressed{
+background-color: rgba(95, 95, 95,100);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="imagefile.qrc">
+        <normaloff>:/image/image/image/close_2.png</normaloff>:/image/image/image/close_2.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnMin">
+      <property name="geometry">
+       <rect>
+        <x>1050</x>
+        <y>-5</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>35</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string>最小化</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+border-radius:0px;
+background-image: url(:/image/image/image/min.png);
+background-color: rgba(255, 255, 255,0);
+background-repeat:no-repeat;
+border:none;
+background-position:center center;
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255,100);
+}
+QPushButton:pressed{
+background-color: rgba(95, 95, 95,100);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnAdd">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>0</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="toolTip">
+       <string>添加本地音乐</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="imagefile.qrc">
+        <normaloff>:/image/image/image/addFromLocal.png</normaloff>:/image/image/image/addFromLocal.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="shortcut">
+       <string>Ctrl+O</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>80</y>
+       <width>900</width>
+       <height>490</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="currentIndex">
+      <number>3</number>
+     </property>
+     <widget class="QWidget" name="page_0">
+      <widget class="MusicListWidget" name="playListWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>40</y>
+         <width>800</width>
+         <height>460</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 50);
+</string>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::SingleSelection</enum>
+       </property>
+       <property name="isWrapping" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+       <property name="selectionRectVisible">
+        <bool>false</bool>
+       </property>
+       <property name="sortingEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="titleLabel_2">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>111</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei UI</family>
+         <pointsize>15</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>当前播放</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnClear">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>0</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei UI</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="toolTip">
+        <string>清空当前列表</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="imagefile.qrc">
+         <normaloff>:/image/image/image/clear.png</normaloff>:/image/image/image/clear.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_1">
+      <widget class="MusicListWidget" name="localMusicWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>40</y>
+         <width>800</width>
+         <height>460</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 50);
+</string>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::SingleSelection</enum>
+       </property>
+       <property name="isWrapping" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+       <property name="selectionRectVisible">
+        <bool>false</bool>
+       </property>
+       <property name="sortingEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="titleLabel_3">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>111</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei UI</family>
+         <pointsize>15</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>本地音乐</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnClear_2">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>0</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei UI</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="toolTip">
+        <string>清空当前列表</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="imagefile.qrc">
+         <normaloff>:/image/image/image/clear.png</normaloff>:/image/image/image/clear.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <widget class="QLabel" name="titleLabel_4">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>0</y>
+         <width>70</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei UI</family>
+         <pointsize>15</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>我喜欢</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="MusicListWidget" name="favorMusicWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>40</y>
+         <width>800</width>
+         <height>460</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 50);
+</string>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::SingleSelection</enum>
+       </property>
+       <property name="isWrapping" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+       <property name="selectionRectVisible">
+        <bool>false</bool>
+       </property>
+       <property name="sortingEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnAddtoFavor">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>35</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="toolTip">
+        <string>添加音乐</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+background-image: url(:/image/image/image/add.png);
+background-repeat:no-repeat;
+background-position:center center;
+border:none;
+}
+
+QPushButton:hover{
+background-image: url(:/image/image/image-hover/add-hover.png);
+background-repeat:no-repeat;
+background-position:center center;
+}
+
+QPushButton:pressed{
+background-image: url(:/image/image/image/add.png);
+background-repeat:no-repeat;
+background-position:center center;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnClear_3">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>0</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei UI</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="toolTip">
+        <string>清空当前列表</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="imagefile.qrc">
+         <normaloff>:/image/image/image/clear.png</normaloff>:/image/image/image/clear.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <widget class="RotatableLabel" name="coverLabel">
+       <property name="geometry">
+        <rect>
+         <x>25</x>
+         <y>25</y>
+         <width>350</width>
+         <height>350</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="imagefile.qrc">:/image/image/image/non-music.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="LyricWidget" name="lyricWidget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>80</y>
+         <width>500</width>
+         <height>410</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+      </widget>
+      <widget class="QFrame" name="frame">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>0</y>
+         <width>500</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame#frame{
+border:none;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="MusicDetail_Title">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>500</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Waree</family>
+          <pointsize>20</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <kerning>true</kerning>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>title</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="MUsicDetail_Singer">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>45</y>
+          <width>500</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Waree</family>
+          <pointsize>15</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>author</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="btnPlay">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>380</y>
+         <width>60</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="toolTip">
+        <string>播放/暂停</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+background-image: url(:/image/image/image/pase.png);
+background-repeat:no-repeat;
+background-position:center center;
+border:none;
+}
+
+QPushButton:hover{
+background-image: url(:/image/image/image-hover/pase-hover.png);
+background-repeat:no-repeat;
+background-position:center center;
+}
+
+QPushButton:pressed{
+background-image: url(:/image/image/image/pase.png);
+background-repeat:no-repeat;
+background-position:center center;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="shortcut">
+        <string>Space</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnPre">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>390</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="toolTip">
+        <string>上一首</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+background-image: url(:/image/image/image/pre.png);
+background-repeat:no-repeat;
+background-position:center center;
+border:none;
+}
+QPushButton:hover{
+background-image: url(:/image/image/image-hover/pre-hover.png);
+background-repeat:no-repeat;
+background-position:center center;
+}
+QPushButton:pressed{
+background-image: url(:/image/image/image/pre.png);
+background-repeat:no-repeat;
+background-position:center center;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="shortcut">
+        <string>Alt+Left</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnNext">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>390</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="toolTip">
+        <string>下一首</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+background-image: url(:/image/image/image/next.png);
+background-repeat:no-repeat;
+background-position:center center;
+border:none;
+}
+QPushButton:hover{
+background-image: url(:/image/image/image-hover/next-hover.png);
+background-repeat:no-repeat;
+background-position:center center;
+}
+QPushButton:pressed{
+background-image: url(:/image/image/image/next.png);
+background-repeat:no-repeat;
+background-position:center center;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="shortcut">
+        <string>Alt+Right</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnPlayMode">
+       <property name="geometry">
+        <rect>
+         <x>25</x>
+         <y>390</y>
+         <width>40</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="toolTip">
+        <string>循环播放</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+background-image: url(:/image/image/image/loop.png);
+background-repeat:no-repeat;
+background-position:center center;
+border:none;
+}
+
+QPushButton:hover{
+background-image: url(:/image/image/image-hover/loop-hover.png);
+background-repeat:no-repeat;
+background-position:center center;
+}
+
+QPushButton:pressed{
+background-image: url(:/image/image/image/loop.png);
+background-repeat:no-repeat;
+background-position:center center;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnVolume">
+       <property name="geometry">
+        <rect>
+         <x>25</x>
+         <y>440</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="toolTip">
+        <string>音量控制</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+background-image: url(:/image/image/image/music-voice.png);
+background-repeat:no-repeat;
+background-position:center center;
+border:none;
+}
+
+QPushButton:hover{
+background-image: url(:/image/image/image-hover/music-voice-hover.png);
+background-repeat:no-repeat;
+background-position:center center;
+}
+
+QPushButton:pressed{
+background-image: url(:/image/image/image/music-voice.png);
+background-repeat:no-repeat;
+background-position:center center;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QSlider" name="volumeSlider">
+       <property name="geometry">
+        <rect>
+         <x>75</x>
+         <y>445</y>
+         <width>290</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="music_like_or_not">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>390</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="imagefile.qrc">
+         <normaloff>:/image/image/image/not_liked.png</normaloff>:/image/image/image/not_liked.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="RollingLabel" name="infoLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>600</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_4"/>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>MusicListWidget</class>
+   <extends>QListWidget</extends>
+   <header location="global">MusicListWidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>LyricWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">LyricWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>RotatableLabel</class>
+   <extends>QLabel</extends>
+   <header location="global">rotatablelabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>RollingLabel</class>
+   <extends>QLabel</extends>
+   <header location="global">rollinglabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="imagefile.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="dialog-error.png">images/dialog-error.png</file>
+        <file alias="edit-clear.png">images/edit-clear.png</file>
+        <file alias="go-bottom.png">images/go-bottom.png</file>
+        <file alias="go-next.png">images/go-next.png</file>
+        <file alias="go-previous.png">images/go-previous.png</file>
+        <file alias="process-stop.png">images/process-stop.png</file>
+        <file alias="text-html.png">images/text-html.png</file>
+        <file alias="view-refresh.png">images/view-refresh.png</file>
+        <file>AppLogo.png</file>
+        <file alias="ninja.png">images/ninja.png</file>
+        <file alias="download-icon.png">images/download.png</file>
+        <file>tabbar.qss</file>
+        <file alias="tab-close.png">images/tab-close.png</file>
+        <file alias="tab-close-hover.png">images/tab-close-hover.png</file>
+        <file>images/private.png</file>
+        <file>images/Star0.png</file>
+        <file>images/Star1.png</file>
+    </qresource>
+</RCC>
